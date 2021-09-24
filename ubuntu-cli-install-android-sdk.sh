@@ -20,7 +20,7 @@ wget -q https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.z
 cd android-ndk-r15c
 unzip android-ndk*.zip -d android-ndk-r15c
 
-export ndk-bundle="Android/"
+#export ndk-bundle="Android/"
 
 ACCEPT_LICENSES_URL=https://gist.githubusercontent.com/xiaokangwang/1489fd223d26581bfec92adb3cb0088e/raw/328eb6925099df5aae3e76790f8232f0fc378f8b/accept-licenses
 
