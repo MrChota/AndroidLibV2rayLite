@@ -16,10 +16,12 @@ fetchDep:
 
 ANDROID_HOME=$(HOME)/android-sdk-linux
 export ANDROID_HOME
+NDK_HOME=$(HOME)/android-ndk-r15c
+export NDK_HOME
 PATH:=$(PATH):$(GOPATH)/bin
 export PATH
 downloadGoMobile:
-	cd ~ ;curl -L https://raw.githubusercontent.com/2dust/AndroidLibV2rayLite/master/ubuntu-cli-install-android-sdk.sh | sudo bash -
+	cd ~ ;curl -L https://raw.githubusercontent.com/MrChota/AndroidLibV2rayLite/master/ubuntu-cli-install-android-sdk.sh | sudo bash -
 	ls ~
 	ls ~/android-sdk-linux/
 
