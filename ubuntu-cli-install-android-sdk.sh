@@ -16,9 +16,9 @@ mkdir android-sdk-linux
 unzip sdk*.zip -d android-sdk-linux
 
 # Get NDK (https://developer.android.com/ndk/downloads/index.html)
-wget -q https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip
-cd android-ndk-r15c
-unzip android-ndk*.zip -d android-ndk-r15c
+wget -q https://dl.google.com/android/repository/android-ndk-r19c-linux-x86_64.zip
+cd android-ndk-r19c
+unzip android-ndk*.zip -d android-ndk-r19c
 
 #export ndk-bundle="Android/"
 
@@ -72,7 +72,7 @@ yes|./sdkmanager --verbose "${filenames[@]}" |awk -f reduce.awk
 # Add the directory containing executables in PATH so that they can be found
 echo 'export ANDROID_HOME=$HOME/android-sdk-linux' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools' >> ~/.bashrc
-echo 'export NDK_HOME=$HOME/android-ndk-r15c' >> ~/.bashrc
+echo 'export NDK_HOME=$HOME/android-ndk-r19c' >> ~/.bashrc
 echo 'export ANDROID_NDK_HOME=$NDK_HOME' >> ~/.bashrc
 
 
