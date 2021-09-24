@@ -16,7 +16,7 @@ fetchDep:
 
 ANDROID_HOME=$(HOME)/android-sdk-linux
 export ANDROID_HOME
-NDK_HOME=$(HOME)/android-ndk-r15c
+NDK_HOME=$(HOME)/android-ndk-r19c
 export NDK_HOME
 PATH:=$(PATH):$(GOPATH)/bin
 export PATH
